@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'sans';
+    src: local('sans'), url(../assets/fonts/iransans.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'latin';
+    src: local('latin'), url(../assets/fonts/PlusJakartaSans-Regular.woff) format('woff');
+}

@@ -1,0 +1,169 @@
+@import "variables";
+@import "mixins";
+
+//////////////////////////////////////////////////////////////////
+*{
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul{
+  padding: 0 !important;
+  margin: 0;;
+}
+
+.inRowFlexItems{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+body.dark-mode {
+  background-color: #10171d;
+  color: #dfdfdf;
+
+  .dark-mode-toggle > button {
+    color: #999;
+    &:last-child {
+      color: #03a9f4 !important;
+      font-size: 24px !important;
+    }
+  }
+  .mainHeaderDashboardFrame{
+    background-color: #000;
+    box-shadow: 0 0 36px #2b2b2b;
+  }
+}
+.rtlText{
+  direction: rtl;
+  //font-family: 'sans';
+}
+.columnDirectionFlexStart{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.columnDirectionCenterAlign{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dashboardBackgroundColor{
+  background-color: #fff;
+  min-height: 100vh;
+}
+.space10Style{
+  width: 100%;
+  height: 10px
+}
+.space20Style{
+  width: 100%;
+  height: 20px
+}
+.space30Style{
+  width: 100%;
+  height: 30px
+}
+.space50Style{
+  width: 100%;
+  height: 50px
+}
+
+.ant-collapse{
+  background-color: transparent;
+}
+.ant-tooltip-inner{
+  font-size: 50px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  .myContainer{
+    width: 1127px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .websiteContainer{
+    width: 1290px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media (min-width: 1400px) {
+  .myContainer{
+    width: 1427px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .myContainer{
+    width: 933px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .websiteContainer{
+    width: 1100px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .myContainer{
+    width: 723px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .myContainer{
+    width: 92% !important;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+  }
+  .websiteContainer{
+    width: 92%;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+  }
+  .hiddenInMobile{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hiddenInDesktop{
+    display: none
+  }
+}

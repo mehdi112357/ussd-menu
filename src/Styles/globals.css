@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ltrDirection{
+    direction: ltr;
+}
+.rc-tree{
+    /*direction: rtl !important;*/
+}
+.rc-tree .rc-tree-treenode{
+    margin-bottom: 0;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+.rc-tree-title{
+    font-size: 15px;
+}
+.ant-select-selection-item{
+    font-size: 15px !important;
+}
+.dx-context-menu .dx-submenu{
+    border-radius: 15px;
+    padding: 5px;
+}
+.dx-treeview-search {
+    width: 300px !important;
+}
+.ant-list-empty-text{
+    /*direction: rtl;*/
+    color: #757575 !important;
+    font-size: 22px !important;
+    letter-spacing: -1px;
+}
+
+input::placeholder {
+    font-size: 14px !important;
+}
+.placeholderStyle input::placeholder{
+    font-size: 12px !important;
+}
+.createMenuCollapse{
+    width: 100%;
+    background-color: transparent;
+    /*direction: rtl;*/
+}
+.ant-collapse>.ant-collapse-item{
+    border-bottom: 0 !important;
+}
+.sectionTitle{
+    border-left: 4px solid darkorange !important;
+}
+.textAreaStyle{
+    border: 1px solid #cccccc;
+    resize: none;
+}
+.simpleSubmitButton{
+    background-color: #00b95c !important;
+    color: #fff !important;
+    font-size: 14px !important;
+}
+.rtlDirection{
+    direction: rtl !important;
+}
+.ant-form-item-explain-error{
+    font-size: 11px;
+}
+
+.contentBoxStyle{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    align-items: flex-end;
+}
+.contentBoxStyle h3{
+    /*direction: rtl;*/
+    justify-content: flex-start;
+}
+.ant-modal-title{
+    font-size: 22px !important;
+}
